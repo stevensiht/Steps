@@ -12,13 +12,13 @@ public class StepsState<Element>: ObservableObject {
     var data: [Element]
 
     /// Indicate the current step
-    @Published public private(set) var currentIndex: Int = 0
+    @Published public var currentIndex: Int = 0
 
     /// Indicate if there is a next step
-    @Published public private(set) var hasNext: Bool = true
+    @Published public var hasNext: Bool = true
 
     /// Indicate if there is a previous step
-    @Published public private(set) var hasPrevious: Bool = true
+    @Published public var hasPrevious: Bool = true
 
     /// Set to store all cancellables
     private var cancellable: AnyCancellable?
