@@ -9,7 +9,7 @@ import Combine
 
 public class StepsState<Element>: ObservableObject {
     /// Array of items that will populate each page
-    var data: [Element]
+    @Published public var data: [Element]
 
     /// Indicate the current step
     @Published public var currentIndex: Int = 0
