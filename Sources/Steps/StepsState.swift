@@ -65,8 +65,8 @@ public class StepsState<Element>: ObservableObject {
     }
     
     public func resetValues(data: [Element], initialStep: Int = 0) {
-        self.data = steps
-        self.currentIndex = 0
+        self.data = data
+        self.currentIndex = initialStep
         self.hasNext = true
         self.hasPrevious = true
         
