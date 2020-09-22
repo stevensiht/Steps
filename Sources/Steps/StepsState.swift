@@ -63,6 +63,22 @@ public class StepsState<Element>: ObservableObject {
         }
         currentIndex -= 1
     }
+    
+    public func resetValues(data: [Element], initialStep: Int = 0) {
+        self.data = steps
+        self.currentIndex = 0
+        self.hasNext = true
+        self.hasPrevious = true
+        
+        if (initialStep >= data.startIndex && initialStep <= data.endIndex) {
+            currentIndex = initialStep
+        }
+
+        cancellable = $currentIndex.sink { (index) in
+            self.hasNext = index < self.data.endIndex
+            self.hasPrevious = index > self.data.startIndex
+        }
+    }
 }
 
 // MARK: Helpers
