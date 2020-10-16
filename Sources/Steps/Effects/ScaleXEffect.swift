@@ -8,7 +8,7 @@
 import SwiftUI
 
 // Custom scale x effect to add completion block
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, OSX 10.15, tvOS 14.0, watchOS 6.0, *)
 struct ScaleXEffect: AnimatableModifier {
 
     /// The initial scale in X-axis of the effect

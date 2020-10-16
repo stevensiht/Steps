@@ -8,7 +8,7 @@
 import SwiftUI
 
 // Custom offset effect to simulate acceleration deforming the view
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, OSX 10.15, tvOS 14.0, watchOS 6.0, *)
 struct OffsetEffect: GeometryEffect {
 
     /// The initial offset of the effect

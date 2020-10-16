@@ -10,7 +10,7 @@ import SwiftUI
 import SwifterSwiftUI
 
 /// Item to represent each separator between steps
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, OSX 10.15, tvOS 14.0, watchOS 6.0, *)
 struct Separator<Element>: View {
     /// Get step object for the set index
     var step: Step

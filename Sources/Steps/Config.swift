@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 
 /// Object to manage the config of the main component
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, OSX 10.15, tvOS 14.0, watchOS 6.0, *)
 class Config: ObservableObject {
 
     /// Spacing between elements

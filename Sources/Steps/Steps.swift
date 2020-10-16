@@ -86,7 +86,7 @@ extension Steps: Mutable {
     /// Set action when a step is selected by the user
     ///
     /// - Parameter action: new action to call when a step is selected
-    @available(iOS 13.0, OSX 10.15, watchOS 6.0, *)
+    @available(iOS 14.0, OSX 10.15, watchOS 6.0, *)
     @available(tvOS, unavailable)
     public func onSelectStepAtIndex(_ action: ((Int) -> Void)?) -> Self {
         return mutating(keyPath: \.onSelectStepAtIndex, value: action)
